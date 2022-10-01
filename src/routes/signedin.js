@@ -1,15 +1,11 @@
 import firebaseApp from "../firebase/client";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
+import { useEffect } from "react";
 
 export default function SignedIn() {
   const [user, loading, error] = useAuthState(firebaseApp.auth());
   console.log(user, "|", loading, "|", error);
-
-  //const [tasks, taskloading, taskerror] = useCollection(collection("tasks"), {
-  //  snapshotListenOptions: { includeMetadataChanges: true },
-  //});
-  //const [tasks, taskloading, taskerror] = useCollection(collection(getFirestore(firebaseApp), "tasks"), {});
   const db = firebaseApp.firestore();
   const [tasks, taskloading, taskerror] = useCollection(firebaseApp.firestore().collection("tasks"), {
     snapshotListenOptions: { includeMetadataChanges: true },

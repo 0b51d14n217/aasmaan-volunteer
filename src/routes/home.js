@@ -38,7 +38,9 @@ export default function Home() {
         <img className="blob" src={blob}></img>
       </div>
       <button className="volunteer">
-        <a href="/signin"> Volunteer Today</a>
+        <a href="/signin" style={{ textDecoration: "none", color: "white" }}>
+          Volunteer Today
+        </a>
       </button>
       <div className="four">
         <img className="img1" src={aasmaanuncle1}></img>
