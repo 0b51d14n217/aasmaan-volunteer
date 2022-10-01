@@ -3,7 +3,6 @@ import SignInScreen from "./routes/signin";
 import SignedIn from "./routes/signedin";
 import Home from "./routes/home";
 
-import "./App.css";
 
 function App() {
   return (

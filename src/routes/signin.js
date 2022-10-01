@@ -5,7 +5,7 @@ import firebase from "../firebase/client";
 import "firebase/compat/auth";
 
 import "./signin.css";
-import aasmaan from "./imgs/aasmaan_white.svg";
+import aasmaan from "./imgs/aasmaan.svg";
 
 // Configure FirebaseUI.
 const uiConfig = {

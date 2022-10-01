@@ -3,7 +3,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { useEffect } from "react";
 
-import "./home/SignedIn.css";
+import "./signedin.css";
 import aasmaan from "./imgs/aasmaan_white.svg";
 
 export default function SignedIn() {
