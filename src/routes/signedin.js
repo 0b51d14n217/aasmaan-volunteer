@@ -24,7 +24,7 @@ export default function SignedIn() {
             {console.log(doc.data())}
             <p>{doc.data().videolink}</p>
             <p>{doc.data().phone}</p>
-            <button onClick={Accept(doc.data(), doc.id, user.uid)}>Accept</button>
+            <button onClick={Accept}>Accept</button>
             {/*<p>{doc.data().location}</p>*/}
           </div>
         );
