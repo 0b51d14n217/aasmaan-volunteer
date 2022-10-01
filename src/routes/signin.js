@@ -4,6 +4,9 @@ import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import firebase from "../firebase/client";
 import "firebase/compat/auth";
 
+import "./signin.css";
+import aasmaan from "./imgs/aasmaan.svg";
+
 // Configure FirebaseUI.
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
@@ -13,18 +16,22 @@ const uiConfig = {
   // We will display Google and Facebook as auth providers.
   signInOptions: [
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    firebase.auth.EmailAuthProvider.PROVIDER_ID,
     firebase.auth.PhoneAuthProvider.PROVIDER_ID,
   ],
 };
 
 function SignInScreen() {
   return (
-    <div>
-      <h1>My App</h1>
-      <p>Please sign-in:</p>
-      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+    <>
+    <div className="aasmaancontainer">
+      <img src={aasmaan}></img>
     </div>
+    <div class="containercontainer">
+      <div class="authcontainer">
+        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+      </div>
+    </div>
+    </>
   );
 }
 

@@ -10,6 +10,7 @@ img{
 
 body{
     margin: 1em;
+    background-color: white;
 }
 
 :focus{
