@@ -3,6 +3,9 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { useEffect } from "react";
 
+import "./signedin.css";
+import aasmaan from "./imgs/aasmaan_white.svg";
+
 export default function SignedIn() {
   const [user, loading, error] = useAuthState(firebaseApp.auth());
   console.log(user, "|", loading, "|", error);

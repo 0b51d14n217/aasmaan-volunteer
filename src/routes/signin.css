@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 1em;
+}
+
+:focus{
+    outline: none;
+}
+
+/* *{
+    outline: 2px solid red;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@400;600&display=swap');
+
+.authcontainer{
+    background-color: #1f1f1f;
+    border-radius: 30px;
+    margin: 10rem;
+    padding: 5rem;
+    width: 50rem;
+}
+
+.containercontainer{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
