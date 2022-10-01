@@ -17,7 +17,6 @@ export default function SignedIn() {
   console.log(tasks, "|", taskloading, "|", taskerror);
   return (
     <>
-      <h1>Hello !</h1>
       {tasks?.docs?.map((doc) => {
         const Accept = async () => {
           const id = doc.id;
