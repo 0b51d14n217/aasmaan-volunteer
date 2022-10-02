@@ -14,23 +14,20 @@ const uiConfig = {
   // Redirect to /signedIn after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
   signInSuccessUrl: "/signedin",
   // We will display Google and Facebook as auth providers.
-  signInOptions: [
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-  ],
+  signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID, firebase.auth.PhoneAuthProvider.PROVIDER_ID],
 };
 
 function SignInScreen() {
   return (
     <>
-    <div className="aasmaancontainer">
-      <img src={aasmaan}></img>
-    </div>
-    <div class="containercontainer">
-      <div class="authcontainer">
-        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+      <div className="aasmaancontainer">
+        <img src={aasmaan}></img>
       </div>
-    </div>
+      <div className="containercontainer">
+        <div className="authcontainer">
+          <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+        </div>
+      </div>
     </>
   );
 }
